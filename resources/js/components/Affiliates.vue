@@ -7,10 +7,16 @@
 		<div v-if="mapIsLock" class="container affiliates-list">
 			<div class="row justify-content-center">
 				<div class="col-md-8 pt-4">
-					<h1 class="affiliates-list__title">Affiliates list</h1>
+					<!-- <h1 class="affiliates-list__title">Affiliates list</h1> -->
 					<!-- <input @input="filterAffiliates" type="text" class="form-control" placeholder="Filter by name"> -->
 					<div class="overflow-auto">
 						<table class="table table-info table-striped">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Name</th>
+									</tr>
+								</thead>
 								<tr v-for="item in sortArray" :key="item.affiliate_id">
 									<td>{{item.affiliate_id}}</td>
 									<td>{{item.name}}</td>
