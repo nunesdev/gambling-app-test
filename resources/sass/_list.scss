@@ -1,0 +1,15 @@
+.affiliates-list {
+  position: relative;
+  z-index: 2;
+  &__title {
+    color: #fff;
+  }
+  .form-control {
+    margin-bottom: 10px;
+  }
+  .table {
+    td {
+      font-size: 1.4em;
+    }
+  }
+}

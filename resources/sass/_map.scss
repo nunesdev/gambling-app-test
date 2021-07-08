@@ -1,0 +1,22 @@
+.map {
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+
+  &.lock { 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+  }
+
+  .popup {
+    font-size: 1.6em;
+  }
+}
